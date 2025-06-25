@@ -96,9 +96,9 @@ int main()
 
     // search algorithm
     int result = bfs(queue, map, exit, paddingCol, cameFrom);
-    printPath(cameFrom, paddingCol, exit);
 
     if (result > 0) {
+        printPath(cameFrom, paddingCol, exit);
         printf("Escaped in %d minute(s).", result);
     }
     else {
